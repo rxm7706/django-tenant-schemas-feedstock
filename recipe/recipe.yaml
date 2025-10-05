@@ -35,12 +35,7 @@ tests:
       imports:
         - tenant_schemas
       python_version: ${{ python_min }}.*
-  - requirements:
-      run:
-        - pip
-        - python ${{ python_min }}.*
-    script:
-      - pip check
+      pip_check: true
 
 about:
   summary: Tenant support for Django using PostgreSQL schemas.
